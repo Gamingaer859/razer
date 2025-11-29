@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer Viper V3 Pro Savings Tracker</title>
+    
+    <!-- Link to our external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Savings Fund</h1>
+        </header>
+
+        <main>
+            <div class="product-card">
+                <img src="https://assets3.razerzone.com/16q6d2phedNVhHThXW05Fu5-Hxo=/500x500/https%3A%2F%2Fmedias-p1.phoenix.razer.com%2Fsys-master-phoenix-images-container%2Fh08%2Fh61%2F9765618188318%2Fviper-v3-pro-black-500x500.png" alt="Razer Viper V3 Pro (Black)" class="product-image">
+                <h2>Razer Viper V3 Pro</h2>
+                <p class="target-price">Target Price: <span id="target-price">4,990</span> ฿</p>
+            </div>
+
+            <section class="progress-section">
+                <div class="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <p id="progress-text">0% Complete</p>
+            </section>
+
+            <section class="savings-display">
+                Current Savings: <span id="current-savings">0</span> ฿
+            </section>
+
+            <form id="savings-form" class="input-section">
+                <input type="number" id="amount-input" placeholder="Enter amount in Baht" min="1" required>
+                <div class="button-group">
+                    <button type="submit" id="add-button">Add Money</button>
+                    <button type="button" id="reset-button">Reset</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <!-- Link to our external JavaScript file -->
+    <!-- Placed at the end of the body for faster page loading -->
+    <script src="script.js"></script>
+
+</body>
+</html>
